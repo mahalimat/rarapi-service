@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: RAR-API
+  datasource:
+    password: charan123
+    url: jdbc:mysql://localhost:3306/rar
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
